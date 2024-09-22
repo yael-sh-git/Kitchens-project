@@ -1,0 +1,201 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    "tafrit"
+    "homePicture"
+    "about"
+    "project"
+    "buttom"
+    ;
+}
+
+.tafrit{
+    grid-area: tafrit;
+    background-color:black;
+    height: 180px;
+}
+.txt{
+    direction: rtl;
+    position: relative;
+    right: 50px;
+}
+.tafrittxt{  
+    display: inline;
+    color: white;
+    font-size: 30px;
+    padding: 15px;
+ 
+}
+a{
+    color: white;
+}
+
+#logo{
+    width: 140px;
+    height: 80px;
+    display:block;
+    margin-right: auto;
+    margin-left: auto; 
+    margin-top: 50px;
+}
+.homePicture{
+    grid-area: homePicture;
+    background-image: url(./תמונה\ עמוד\ בית\ \(2\).png);   
+    background-size:cover;
+    max-width: 100%;
+    height: 300px;
+    position: relative;
+    top: 5px;
+    line-height: 8;
+}
+
+.kitchens{
+    text-align: center;
+    font-family: 'Assistant',sans-serif;
+    font-size: 50px;
+    color: white;
+    
+}
+.about{
+    grid-area:about ;
+    text-align: center;
+}
+#title2{
+    font-family:'Cursive','Lucida Handwriting' ;   
+    font-size: 20px;
+    color:darkgrey;
+}
+
+.project{
+    grid-area: project;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-gap: 5em;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.p{
+    position: relative;
+    
+}
+.picture{
+    width: 100%;
+     
+    /* width: 400px; */
+    height: 300px; 
+    background-size: contain;    
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    /* backface-visibility: hidden; */
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+.p:hover  .picture{
+    
+    opacity: 0.3;
+  }
+.p:hover .middle {
+    opacity: 1;
+  }
+
+.text {
+    background-color: gray;
+    color: white;
+    font-size: 20px;
+    padding: 16px 32px; 
+    
+}
+
+.buttom{
+    grid-area:buttom ;
+    background-color: black;
+    height: 300px;
+    display: flex;
+    align-items: stretch;
+    direction: rtl;
+    justify-content:space-evenly;
+}
+.buttom h3{
+    color: antiquewhite;
+    font-size: 25px;
+}
+.buttom a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.buttom h4{
+    font-size: 20px;
+    color: white;
+    margin: 1px;
+}
+.col{
+    direction: rtl;
+    display:flex ;
+    flex-direction:column;
+   
+}
+.col3{
+    text-align: center;
+
+}
+#gif{
+    grid-area: imgK;
+    width: 100%;
+    height:270px ;
+    margin: auto;
+}
+
+@media only screen and (max-width: 768px)  {
+     
+    .project{
+        grid-template-columns: 1fr 1fr;
+    }
+    .buttom{
+        flex-direction:column;
+        align-items: center;
+        height: auto;
+    }
+    .buttom > div:nth-child(2){
+        position: relative;
+        right: 20px;
+    }
+    #gif{
+        width: 100%;
+        height:270px ;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 320px)  {
+  
+    .homePicture{
+        height:150px ;
+        line-height: 3;
+    } 
+    .project{
+        grid-template-columns: 1fr;
+    }
+    .txt{
+
+        right: 10px; 
+        padding: 10px;
+        line-height: 2;
+    }
+    .tafrittxt{  
+        /* position: relative;
+        top: 2px;
+        right: 2px; */
+        font-size: 20px;
+        padding: 10px;
+        
+    }
+    
+}
