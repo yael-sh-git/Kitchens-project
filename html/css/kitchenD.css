@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+
+}
+.tafrit{
+    background-color:black;
+    height: 180px;
+    padding-top: 40px;
+}
+.txt{
+    direction: rtl;
+    position: relative;
+    right: 50px;
+}
+.tafrittxt{  
+    display: inline;
+    color: white;
+    font-size: 30px;
+    padding: 15px;
+ 
+}
+a{
+    color: white;
+}
+
+#logo{
+    width: 140px;
+    height: 80px;
+    display:block;
+    margin-right: auto;
+    margin-left: auto; 
+    
+}
+.about{
+    grid-area:about ;
+    text-align: center;
+}
+#title1{
+    font-family: myFirstFont;
+    font-size:40px;;
+}
+#title2{
+    font-family:'Cursive','Lucida Handwriting' ;   
+    font-size: 20px;
+    color:darkgrey;
+}
+
+#name{
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    color:rgb(121, 121, 121);
+    font-weight: lighter;
+}
+#parag{
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight:100;
+  font-size: 20px;
+}
+
+section{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 0.5em;
+      margin: 5px;
+      
+}
+img{
+    width: 100%;
+    height: 500px;
+    border-radius: 7px;
+}
+img:hover{
+     transform: scale(0.9);
+}
+
+footer{
+    background-color: black;
+    height: 300px;
+    display: flex;
+    align-items: stretch;
+    direction: rtl;
+    justify-content:space-evenly;
+}
+
+footer h3{
+    color: antiquewhite;
+    font-size: 25px;
+}
+footer a{
+    text-decoration: none;
+    font-size: 20px;
+}
+footer h4{
+    font-size: 20px;
+    color: white;
+    margin: 1px;
+}
+.col{
+    direction: rtl;
+    display:flex ;
+    flex-direction:column;
+   
+}
+.col3{
+    text-align: center;
+
+}
+#gif{
+    grid-area: imgK;
+    width: 100%;
+    height:270px ;
+    margin: auto;
+}
+@media only screen and (max-width: 768px)  {
+     
+    section{
+        grid-template-columns: 1fr ;
+    }
+    footer{
+        flex-direction:column;
+        align-items: center;
+        height: auto;
+    }
+    footer > div:nth-child(2){
+        position: relative;
+        right: 20px;
+    }
+    #gif{
+        width: 100%;
+        height:270px ;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 320px)  {
+  
+
+    img{
+        height: 300px;
+    }
+    .txt{
+        right: 10px; 
+        padding: 10px;
+        line-height: 2;
+    }
+    .tafrittxt{  
+        /* position: relative;
+        top: 2px;
+        right: 2px; */
+        font-size: 20px;
+        padding: 10px;
+        
+    }
+    
+}

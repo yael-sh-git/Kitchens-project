@@ -1,0 +1,209 @@
+
+body{
+    display: grid;
+    grid-template-areas: 
+    "tafrit"
+    "topnav"
+    "videoHome"
+    "about"
+    "Tahalih"
+    "about2"
+    "buttom"
+    ;
+    grid-gap: 4px;
+    box-sizing: border-box; 
+    margin: 0;
+    /* width: 1502px;  */
+}
+
+
+.tafrit{
+    grid-area: tafrit;
+    background-color:black;
+    height: 180px;
+}
+.txt{
+    direction: rtl;
+    position: relative;
+    right: 50px;
+}
+.tafrittxt{  
+    display: inline;
+    color: white;
+    font-size: 30px;
+    padding: 15px;
+ 
+}
+a{
+    color: white;
+}
+.topnav {
+    grid-area: topnav;
+    overflow: hidden;
+    background-color: white;
+    
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: relative;
+    margin-top: 0%;
+    direction: rtl;
+    right: 0px; 
+    
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+.videoHome{
+    
+    grid-area: videoHome;
+    width: 100%;
+    /* width: 1500px; */
+    height: auto;
+    /* position: relative;
+    top: 5px; */
+}
+.videoHome iframe, 
+.videoHome object, 
+.videoHome embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.about{
+    grid-area:about ;
+    text-align: center;
+}
+.about2{
+    grid-area:about2;
+    text-align: center;
+}
+.Tahalih{
+    grid-area: Tahalih;
+     max-width: 100%; 
+    height: auto;
+}
+
+
+#logo{
+    width: 140px;
+    height: 80px;
+    display:block;
+    margin-right: auto;
+    margin-left: auto; 
+    margin-top: 50px;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+  }
+#title1{
+    font-family: myFirstFont;
+    font-style: normal;
+}
+
+#title2{
+    font-family:'Cursive','Lucida Handwriting' ;   
+    font-size: 20px;
+    color:darkgrey;
+}
+#title3{
+    text-align: center;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 50px;
+      color:rgb(121, 121, 121);
+      font-weight: lighter;
+}
+#parag{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    line-height: 1.7;
+    font-size: 20px;
+}
+
+
+.buttom{
+    grid-area:buttom ;
+    background-color: black;
+    height: 300px;
+    display: flex;
+    align-items: stretch;
+    direction: rtl;
+    justify-content:space-evenly;
+}
+.buttom h3{
+    color: antiquewhite;
+    font-size: 25px;
+}
+.buttom a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.buttom h4{
+    font-size: 20px;
+    color: white;
+    margin: 1px;
+}
+.col{
+    direction: rtl;
+    display:flex ;
+    flex-direction:column;
+   
+}
+.col3{
+    text-align: center;
+
+}
+#gif{
+    grid-area: imgK;
+    width: 100%;
+    height:270px ;
+    margin: auto;
+}
+@media only screen and (max-width: 768px)  {
+    .buttom{
+        flex-direction:column;
+        align-items: center;
+        height: auto;
+    }
+    .buttom > div:nth-child(2){
+        position: relative;
+        right: 20px;
+    }
+    #gif{
+        width: 100%;
+        height:270px ;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 320px)  {
+    .txt{
+
+        right: 10px; 
+        padding: 10px;
+        line-height: 2;
+    }
+    .tafrittxt{  
+        /* position: relative;
+        top: 2px;
+        right: 2px; */
+        font-size: 20px;
+        padding: 10px;
+    }
+    
+
+} 
+
+
+
+

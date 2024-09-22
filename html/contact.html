@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contact</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/contact.css'>
+    <script src='main.js'></script>
+    
+</head>
+<body>
+    <div class="tafrit">
+        <img id="logo"  src="./images/logo-tal.png" alt="לוגו מטבחים">     
+        <div class="txt">
+            <h3 class="tafrittxt"><a href="home.html"  style="text-decoration: none">בית</a></h3> 
+            <h3 class="tafrittxt"><a href="./projects.html" style="text-decoration: none">מטבחים</a></h3> 
+            <h3 class="tafrittxt"><a href="./contact.html" style="text-decoration: none">צור קשר</a></h3>
+        </div>          
+    </div>
+    <div class="homePicture">
+     <h1  class="kitchens">צור קשר</h1> 
+    </div>
+
+    <div class="about1">
+    <h1 id="title1">דרכי התקשרות</h1>
+    <p id="parag">מחלקת שירות הלקוחות, המעצבים וקשרי מעצבי הפנים, אדריכלים, יזמים
+        <br> וקבלנים של טל מטבחים קשובים וזמינים לרשותכם בכל נושא ואתם 
+        <br> !מוזמנים ליצור עמנו קשר בכל הדרכים המוצעות כאן
+    </p>
+    </div>
+    <div class="icons">
+        <div>
+            <img src="./images/אייקון שעון.png" alt="אייקון שעון">             
+            <h2 id="t1">שעות פעילות</h2>
+            <h2 id="t2"> ימים א'-ה': 9:00-18:00
+                <br>יום ו': 9:00-14:00
+            </h2>
+        </div>
+        <div>
+            <a href="https://www.waze.com/en/live-map/directions/%D7%98%D7%9C-%D7%9E%D7%98%D7%91%D7%97%D7%99%D7%9D-tal-kitchens-%D7%94%D7%A0%D7%A4%D7%97-10-%D7%9B%D7%A8%D7%9E%D7%99%D7%90%D7%9C?place=w.23134537.231410908.613743" target="_blank">
+                <img src="./images/אייקון גוגל מפות.png" alt="אייקון גוגל מפות">
+            </a>
+            <h2 id="t1">אולם תצוגה ראשית</h2>
+            <h2 id="t2">הנפח 10, כרמיאל</h2>
+        </div>
+        <div>
+            <a href="tel:+04-6590259">
+               <img src="./images/אייקון טלפון.png" alt="אייקון טלפון">
+            </a>
+            <h2 id="t1">שירות לקוחות ושיווק</h2>
+            <h2 id="t2">04-6590269</h2>
+        </div>
+        
+    </div>
+    <div class="about2">
+        <h1 id="title1">טופס פנייה</h1>
+        <p id="parag">כדי להקל ולחסוך לכם זמן יקר, ללא המתנה בטלפון, אנא מלאו
+            <br> !את טופס הפנייה ונציגנו יחזרו אליכם בהקדם
+            
+            
+        </p>
+        </div>
+    <form class="details" action="controls.php" method="post">
+      <input type="text" name="fullName" placeholder=" שם מלא" required><br>
+      <input type="text" name="phone" placeholder=" טלפון " ><br>
+      <input type="text" name="phone"  placeholder=" אימייל " required><br>
+      
+      <input list="interestes" name="interest" id="interest" placeholder=" בחר/י תחום התעניינות" >
+      <datalist id="interestes">
+        <option value=" בחר/י תחום התעניינות">
+        <option value="תיאום פגישת ייעוץ עם מעצבת">
+        <option value="שירות לקוחות טרום התקנת מטבח">
+        <option value="שירות לקוחות לאחר התקנת מטבח">
+        <option value="מחלקת קשרי מעצבים ואריכלים">
+        <option value="מחלקת קשרי יזמים וקבלנים">
+        <option value=" אחר ">
+      </datalist><br>
+
+      <textarea name="comment" id="commentuser" cols="30" rows="10"  >תוכן הפנייה </textarea><br><br>
+      <input id="b" type="submit" value="שליחה>>" >
+    </form>
+    
+    
+    <div class="buttom">
+        <div class="col">
+            <h3>ראשי</h3>
+             <a href="./Home.html">אודות טל מטבחים</a>
+             <a href="./projects.html">מטבחים</a>
+             <a href="./contact.html">צור קשר</a>
+        </div>
+        <div class="col">
+            <h3>מטבחים</h3>
+            <a href="./kitchenD1.html">מטבח מודרני</a>
+            <a href="./kitchenD3.html">מטבח אורבני</a>
+            <a href="">מטבח אקריל</a>
+            <a href="./kitchenD2.html">מטבח לבן</a>
+            <a href="">מטבח כפרי</a>
+            <a href="">מטבח קלאסי עץ</a>
+            <a href="">מטבח לבן בשילוב ויטרינה</a>
+            <a href="">מטבח קלאסי </a>
+            <a href="./kitchenD4.html">מטבח מודרני שחור </a>
+        </div>
+        <div class="col3">
+            <h3>פרטים</h3>
+            <h4>כתובת אולם תצוגה ראשי: הנפח 10, כרמיאל</h4>
+            <h4>כתובת מפעל טל מטבחים: הנפח 5, כרמיאל</h4>
+            <h4>שעות פעילות: א'-ה' 9:00-18:00 ו' 9:00-14:00</h4>
+            <h4>טלפון: 04-6590269</h4>
+        </div>
+        <div class="col">
+            <video id="gif"  autoplay muted loop>
+                <source src="./images/סרטון מטבח.webm" type="video/webm" > 
+            </video>
+        </div>
+    </div>
+
+    </div>
+</body>
+</html>
